@@ -1,75 +1,50 @@
 <!DOCTYPE html>
+<html>
 <head>
     <style>
         body, html {
-	height: 100%;
-}
-html{
-	height: 100%;
-	background-image:url("music.jpg");
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
+            height: 100%;
+            margin: 0; /* Ensure no default margins */
+        }
+        body {
+            background-image: url("music.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 100vh; /* Ensures background covers full screen */
+        }
+
         /* GRID OF 'FLEXBOX' BOXES */
-.container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
-.item {
-	width: 32%;
-  padding-bottom: 18%; /* 32:18, i.e. 16:9 */
-  margin-bottom: 2%; /* (100-32*3)/2 */
-  background-color: rgba(255,255,255,0.8);
-  color: rgb(240, 243, 246);
-  background-size: cover;
-}
-div{border:1px solid #ccc;} 
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .item {
+            width: 32%;
+            padding-bottom: 18%; /* Aspect ratio of 16:9 */
+            margin-bottom: 2%;
+            background-color: rgba(255, 255, 255, 0.8);
+            color: rgb(240, 243, 246);
+            background-size: cover;
+        }
+        div { border: 1px solid #ccc; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="item">
-            Technique: Defamiliarise
-        </div>
-        <div class="item">
-            Technique: Document
-        </div> 
-        <div class="item">
-            Technique: Break
-        </div> 
-        <div class="item">
-            Technique: Explore code
-        </div> 
-        <div class="item">
-            Technique: Map components
-        </div> 
-        <div class="item">
-            Association: Historical
-        </div> 
-        <div class="item">
-            Association: Technical
-        </div> 
-        <div class="item">
-            Association: Feelings
-        </div> 
-        <div class="item">
-            Association: Political
-        </div> 
-        <div class="item">
-            Association: Gender
-        </div> 
-        <div class="item">
-            Association: Social class
-        </div> 
-        <div class="item">
-            Association: Race
-        </div> 
-        <div class="item">
-            Association: Race
-        </div> 
+        <div class="item">Technique: Defamiliarise</div>
+        <div class="item">Technique: Document</div> 
+        <div class="item">Technique: Break</div> 
+        <div class="item">Technique: Explore code</div> 
+        <div class="item">Technique: Map components</div> 
+        <div class="item">Association: Historical</div> 
+        <div class="item">Association: Technical</div> 
+        <div class="item">Association: Feelings</div> 
+        <div class="item">Association: Political</div> 
+        <div class="item">Association: Gender</div> 
+        <div class="item">Association: Social class</div> 
+        <div class="item">Association: Race</div> 
     </div>
-
 </body>
 </html>
